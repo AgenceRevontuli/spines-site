@@ -1,14 +1,35 @@
-import AnimatedBackground from "./Components/Experiences/AnimatedBackground"
 import Test from "./Components/Experiences/Test"
+import FadeInText from "./Components/FadeInText"
 import Header from "./Components/Header"
 
 export default function Home() {
   return (
-    <div>
+    <>
         <header className="h-screen relative">
           <Test />
           <Header />
+          <div className="px-32 flex flex-col justify-center h-full w-8/12">
+            <div className="rounded-full inline-block bg-[#ffffff88] w-fit px-4 py-2 mb-8">
+              <p className="text-slate-700">Studio Growth Marketing</p>
+            </div>
+            <h1 className="text-white text-7xl font-sans">Optimisez vos actions sur le web pour passer de x1 à x6 de marge</h1>
+            <div className="mt-16">
+              <button className="bg-white px-8 py-4 rounded-full text-xl">Réserver un appel de découverte</button>
+            </div>
+            <div className="text-white mt-16">
+              <p>+100 clients accompagnés</p>
+            </div>
+          </div>
         </header>
-    </div>
+        <div className="px-32 py-32 text-white bg-slate-950 flex justify-center">
+          <div className="flex flex-col gap-16 justify-center max-w-5xl">
+            <p className="text-2xl">Vous n'avez pas besoin de nous si ... </p> 
+            <FadeInText 
+              text="vos objectifs sont parfaitement définis, votre stratégie d'acquisition est testée et optimisée, vous pilotez toutes vos actions marketing et vos processus de prospection et de fidélisation sont automatisées."
+            />
+            <p className="text-4xl">En revanche, si vous avez un doute sur l'un de ces points, on a des solutions pour faire croître votre entreprise !</p>
+          </div>
+        </div>
+    </>
   )
 }

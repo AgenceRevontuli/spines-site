@@ -10,10 +10,7 @@ export default function Test() {
         <Canvas 
             camera={{ position: [0, 0, 0.2], fov: 45 }}
         >
-            <EffectComposer>
-                <Noise opacity={0.7} premultiply={true} />
                 <AnimatedBackground />
-            </EffectComposer>
         </Canvas>
     </div>
   )

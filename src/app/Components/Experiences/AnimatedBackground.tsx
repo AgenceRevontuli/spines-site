@@ -19,7 +19,7 @@ export default function AnimatedBackground() {
   const backgroundRef = useRef()
   useFrame((state, delta) => {
     // @ts-ignore
-    backgroundRef.current.uniforms.uTime.value += delta * 0.005
+    backgroundRef.current.uniforms.uTime.value += delta * 0.01
   })
 
   return (

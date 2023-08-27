@@ -1,10 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Header from './Components/Header'
 import Footer from './Components/Footer'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const spinesFont = localFont({ src: './fonts/customFont.otf'})
 
 export const metadata: Metadata = {
   title: 'Spines - Agence Acquisition digitale',
@@ -17,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr">
-      <body className={inter.className}>
+    <html lang="fr" className={spinesFont.className}>
+      <body>
         <main>
           {children}
           <Footer />
