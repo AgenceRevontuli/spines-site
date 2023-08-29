@@ -23,11 +23,11 @@ export default function FadeInText({
         gsap.to(ref.current, {
             opacity: 1,
             ease: "none", 
-            stagger: 0.8,
+            stagger: 0.1,
             scrollTrigger: {
                 trigger: container.current, 
-                start: 'top-80%',
-                end: 'bottom-500px',
+                start: 'top-30%',
+                end: 'bottom-100px',
                 scrub: true,
             }
         })
