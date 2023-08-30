@@ -30,7 +30,9 @@
   },
   "devDependencies": {
     "@react-three/drei": "^9.80.6",
+    "leva": "^0.9.35",
     "raw-loader": "^4.0.2",
-    "snowpack-plugin-glslify": "^1.0.0"
+    "snowpack-plugin-glslify": "^1.0.0",
+    "uuidv4": "^6.2.13"
   }
 }

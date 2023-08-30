@@ -1,4 +1,4 @@
-import Test from "./Components/Experiences/Test"
+import AnimatedBackground from "./Components/Experiences/AnimatedBackground"
 import FadeInText from "./Components/FadeInText"
 import Header from "./Components/Header"
 import Prestations from "./Components/Prestations/Prestations"
@@ -9,19 +9,23 @@ export default function Home() {
   return (
     <>
         <header className="h-screen relative">
-          <Test />
+          <div className="absolute h-full w-full z-[-1]">
+            <AnimatedBackground />
+          </div>
           <Header />
-          <div className="px-32 flex flex-col justify-center h-full w-8/12">
-            <div className="rounded-full inline-block bg-[#ffffff88] w-fit px-4 py-2 mb-8">
-              <p className="text-slate-700">Studio Growth Marketing</p>
-            </div>
-            <h1 className="text-white text-6xl font-sans">Optimisez vos actions sur le web pour passer de x1 à x6 de marge</h1>
-            <div className="mt-8">
-              <button className="bg-white px-8 py-4 rounded-full text-xl">Réserver un appel de découverte</button>
-            </div>
-            <div className="text-white mt-8">
-              <p>+100 clients accompagnés</p>
-              <Clients />
+          <div className="flex items-center h-screen">
+            <div className="px-32 flex flex-col justify-center h-full w-8/12">
+              <div className="rounded-full inline-block bg-[#ffffff88] w-fit px-4 py-2 mb-8">
+                <p className="text-slate-700">Studio Growth Marketing</p>
+              </div>
+              <h1 className="text-white text-6xl font-sans">Optimisez vos actions sur le web pour passer de x1 à x6 de marge</h1>
+              <div className="mt-8">
+                <button className="bg-white px-8 py-4 rounded-full text-xl">Réserver un appel de découverte</button>
+              </div>
+              <div className="text-white mt-8">
+                <p>+100 clients accompagnés</p>
+                <Clients />
+              </div>
             </div>
           </div>
         </header>
