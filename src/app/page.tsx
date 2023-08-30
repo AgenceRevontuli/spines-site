@@ -2,6 +2,8 @@ import Test from "./Components/Experiences/Test"
 import FadeInText from "./Components/FadeInText"
 import Header from "./Components/Header"
 import Prestations from "./Components/Prestations/Prestations"
+import Clients from './Components/Clients'
+import Psynyou from "./Components/Projects/Psynyou"
 
 export default function Home() {
   return (
@@ -13,11 +15,11 @@ export default function Home() {
             <div className="rounded-full inline-block bg-[#ffffff88] w-fit px-4 py-2 mb-8">
               <p className="text-slate-700">Studio Growth Marketing</p>
             </div>
-            <h1 className="text-white text-7xl font-sans">Optimisez vos actions sur le web pour passer de x1 à x6 de marge</h1>
-            <div className="mt-16">
+            <h1 className="text-white text-6xl font-sans">Optimisez vos actions sur le web pour passer de x1 à x6 de marge</h1>
+            <div className="mt-8">
               <button className="bg-white px-8 py-4 rounded-full text-xl">Réserver un appel de découverte</button>
             </div>
-            <div className="text-white mt-16">
+            <div className="text-white mt-8">
               <p>+100 clients accompagnés</p>
               <Clients />
             </div>
@@ -45,7 +47,9 @@ export default function Home() {
         <div className="px-32 py-32 text-white bg-slate-950 flex justify-center">
           <div className="flex flex-col gap-4 justify-center max-w-5xl w-full">
             <h2 className="text-5xl">Comment nous le faisons</h2>
-            
+            <div>
+              <Psynyou />
+            </div>
           </div>
         </div>
     </>
